@@ -4,27 +4,41 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e4214afc-f7fe-4819-88f1-105807d86fa0" name="Changes" comment="api" />
+    <list default="true" id="e4214afc-f7fe-4819-88f1-105807d86fa0" name="Changes" comment="api">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/TheTestingAcademy/BuilderPatternDesignPatternJava.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/TheTestingAcademy/NoDesignPattern.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/TheTestingAcademy/Test003.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/TheTestingAcademy/ex_15092024/CRUD/GET/BDDStyleGET.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/TheTestingAcademy/Test001.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/TheTestingAcademy/Test001.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "JhansiMuthyala"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;JhansiMuthyala&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/JhansiMuthyala/ATB7XAPIAutomation_JhansiM.git",
-    "accountId": "ede593d6-0675-469d-a467-59ab3cd65866"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/JhansiMuthyala/ATB7XAPIAutomation_JhansiM.git&quot;,
+    &quot;accountId&quot;: &quot;ede593d6-0675-469d-a467-59ab3cd65866&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -37,6 +51,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.AppTest.executor": "Run",
+    "Application.NoDesignPattern.executor": "Run",
     "Application.Test001.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -78,7 +93,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738953084790</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="api">
+      <option name="closed" value="true" />
+      <created>1738953439084</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1738953439084</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

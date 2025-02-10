@@ -16,11 +16,11 @@ public class Test001
         // then() - verify the response
         RestAssured
                 .given().baseUri("https://restful-booker.herokuapp.com")
-                .basePath("/booking/800").log().all()
+                .basePath("/booking/1").log().all()
                 .when()
                 .get()
                 .then()
-                .statusCode(404);
+                .statusCode(200);
 
 
     }
