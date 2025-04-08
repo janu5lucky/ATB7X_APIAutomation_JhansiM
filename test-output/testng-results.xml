@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-04-08T21:40:13 IST" name="Default suite" finished-at="2025-04-08T21:40:18 IST" duration-ms="4667">
+    <groups>
+    </groups>
+    <test started-at="2025-04-08T21:40:13 IST" name="Default test" finished-at="2025-04-08T21:40:18 IST" duration-ms="4667">
+      <class name="com.api.qa.CRUD.POJOS.De_serialisation_pojo_Class_Ex_001">
+        <test-method signature="Pojoserialization()[pri:0, instance:com.api.qa.CRUD.POJOS.De_serialisation_pojo_Class_Ex_001@431cd9b2]" started-at="2025-04-08T21:40:13 IST" name="Pojoserialization" finished-at="2025-04-08T21:40:18 IST" duration-ms="4488" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Pojoserialization -->
+      </class> <!-- com.api.qa.CRUD.POJOS.De_serialisation_pojo_Class_Ex_001 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
