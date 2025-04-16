@@ -8,7 +8,6 @@ private Integer totalprice ;
 private boolean depositpaid ;
 private String additionalneeds ;
 private BookingDates bookingdates;
-//public String setfirstname;
 
 public String getFirstname() {
 	return firstname;

@@ -5,6 +5,8 @@ import java.util.Map;
 
 import org.testng.annotations.Test;
 
+import com.google.gson.Gson;
+
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
@@ -29,7 +31,7 @@ public class Hashmap_Pojo_class_Ex_002 {
 	   // "additionalneeds": "Breakfast"
 ///	}
 
-	
+	String Payload ="";
 	Map<String , Object> payloadusingmap = new LinkedHashMap<>();
 	payloadusingmap.put("firstname", "Sally");
 	payloadusingmap.put("lastname", "Traver");
@@ -45,13 +47,17 @@ public class Hashmap_Pojo_class_Ex_002 {
 	
 	payloadusingmap.put("additionalneeds", "Breakfast");
 
-	System.out.println(payloadusingmap);
+	System.out.println("Hash map payload : "+payloadusingmap);
+	Gson gson = new Gson();
+	Payload = gson.toJson(payloadusingmap);
+	System.out.println("Json String :" +Payload);
+
 
 	RequestSpecification requestspecs = RestAssured.given();
 	requestspecs.baseUri("https://restful-booker.herokuapp.com");
-	requestspecs.baseUri("/booking");
+	requestspecs.basePath("/booking");
 	requestspecs.contentType(ContentType.JSON);
-	requestspecs.body(payloadusingmap).log().all();
+	requestspecs.body(Payload).log().all();
 	
 	
 	Response response = requestspecs.when().post();

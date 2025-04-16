@@ -1,6 +1,5 @@
 package com.api.qa.CRUD;
 
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import io.restassured.RestAssured;
@@ -17,8 +16,8 @@ public class All_CRUD_OPS_EX_001 {
 	public static String id = "";
 	public static String token = "";
 	public static String BasePathAuth = "/auth";
-	public static String BasePathGet = "/booking/"+id;
-	public static String BasePathPost = "/booking/";
+	public static String BasePathGet = "";
+	public static String BasePathPost = "/booking";
 	//public static String BasePathPut = "/booking/"+id;
 	
 	@Test
@@ -75,19 +74,19 @@ public class All_CRUD_OPS_EX_001 {
 		
 		id = response.jsonPath().getString("bookingid");
 		System.out.println("Id : " +id);
-		
+		BasePathGet = BasePathPost+"/"+id;
 		
 	}
 	
 	@Test
 	public static void Test_03_Verify_CreatedBooking_GET() {
 			
-		System.out.println("Base Path >>>   :"+BasePathGet+id);
+		System.out.println("Base Path >>>   :"+BasePathGet);
 
 			
 			requestspecification = RestAssured.given();
 			requestspecification.baseUri(BaseUri);
-			requestspecification.basePath(BasePathGet+id);
+			requestspecification.basePath(BasePathGet);
 			requestspecification.cookie("token", token);
 			requestspecification.contentType(ContentType.JSON).log().all();
 			
@@ -120,7 +119,7 @@ public static void Test_04_UpdateBooking_PUT() {
 		
 		requestspecification = RestAssured.given();
 		requestspecification.baseUri(BaseUri);
-		requestspecification.basePath(BasePathGet+id);
+		requestspecification.basePath(BasePathGet);
 		requestspecification.cookie("token", token);
 		requestspecification.contentType(ContentType.JSON).body(PutPayload).log().all();
 		
@@ -139,7 +138,7 @@ public static void Test_04_UpdateBooking_PUT() {
 			
 			requestspecification = RestAssured.given();
 			requestspecification.baseUri(BaseUri);
-			requestspecification.basePath(BasePathGet+id);
+			requestspecification.basePath(BasePathGet);
 			requestspecification.cookie("token", token);
 			requestspecification.contentType(ContentType.JSON).log().all();
 			
@@ -156,7 +155,7 @@ public static void Test_04_UpdateBooking_PUT() {
 			
 			requestspecification = RestAssured.given();
 			requestspecification.baseUri(BaseUri);
-			requestspecification.basePath(BasePathGet+id);
+			requestspecification.basePath(BasePathGet);
 			requestspecification.cookie("token", token);
 			requestspecification.contentType(ContentType.JSON).log().all();
 			
@@ -175,7 +174,7 @@ public static void Test_04_UpdateBooking_PUT() {
 			
 			requestspecification = RestAssured.given();
 			requestspecification.baseUri(BaseUri);
-			requestspecification.basePath(BasePathGet+id);
+			requestspecification.basePath(BasePathGet);
 			requestspecification.cookie("token", token);
 			requestspecification.contentType(ContentType.JSON).log().all();
 			
