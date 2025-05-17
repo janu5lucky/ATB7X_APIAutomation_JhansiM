@@ -49,9 +49,9 @@ public class Serialisation_Pojo_Ex_001 {
 		String jsonpayload = gson.toJson(booking);
 		System.out.println(jsonpayload);
 		
-		rs = RestAssured.given();
-		rs.baseUri(BaseUri);
-		rs.basePath(BasePathPost);
+		//rs = RestAssured.given();
+		//rs.baseUri(BaseUri);
+	//	rs.basePath(BasePathPost);
 		rs.contentType(ContentType.JSON);
 		rs.body(jsonpayload).log().all();
 		
